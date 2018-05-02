@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BitcoinApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ock-ZI-XUm"/>
+                        <viewControllerLayoutGuide type="bottom" id="G1o-31-xIy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background3" translatesAutoresizingMaskIntoConstraints="NO" id="LSs-n4-trM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.0" green="0.84915291556608452" blue="0.98829740290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jg7-Dt-rnc">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="191"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZGz-pe-AwG">
+                                <rect key="frame" x="0.0" y="264" width="375" height="403"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZGz-pe-AwG" firstAttribute="top" secondItem="Jg7-Dt-rnc" secondAttribute="bottom" constant="73" id="Jpj-LP-ccz"/>
+                            <constraint firstItem="ZGz-pe-AwG" firstAttribute="top" secondItem="ock-ZI-XUm" secondAttribute="bottom" constant="244" id="Khl-Zh-IJG"/>
+                            <constraint firstItem="Jg7-Dt-rnc" firstAttribute="leading" secondItem="LSs-n4-trM" secondAttribute="leading" id="Oe1-Vj-WEQ"/>
+                            <constraint firstAttribute="trailing" secondItem="LSs-n4-trM" secondAttribute="trailing" id="UQm-fd-S5V"/>
+                            <constraint firstItem="G1o-31-xIy" firstAttribute="top" secondItem="LSs-n4-trM" secondAttribute="bottom" id="WIr-Qp-uxg"/>
+                            <constraint firstItem="LSs-n4-trM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Y4m-sU-ZR0"/>
+                            <constraint firstItem="ZGz-pe-AwG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fJH-fV-WKj"/>
+                            <constraint firstItem="Jg7-Dt-rnc" firstAttribute="top" secondItem="LSs-n4-trM" secondAttribute="top" id="hDt-EL-J3F"/>
+                            <constraint firstAttribute="trailing" secondItem="ZGz-pe-AwG" secondAttribute="trailing" id="htI-st-hoX"/>
+                            <constraint firstItem="G1o-31-xIy" firstAttribute="top" secondItem="ZGz-pe-AwG" secondAttribute="bottom" id="l3w-q8-vsC"/>
+                            <constraint firstItem="LSs-n4-trM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="q7p-Xb-QAl"/>
+                            <constraint firstItem="Jg7-Dt-rnc" firstAttribute="trailing" secondItem="ZGz-pe-AwG" secondAttribute="trailing" id="s5b-JG-sxk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bitcoinPriceLabel" destination="Jg7-Dt-rnc" id="LGh-mP-7xe"/>
+                        <outlet property="currencyPicker" destination="ZGz-pe-AwG" id="MaK-nO-flZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="160" y="364"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background3" width="888" height="1600"/>
+    </resources>
+</document>
